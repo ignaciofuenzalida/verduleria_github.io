@@ -100,6 +100,10 @@ padding-top: 1rem;
 .numeros{
 display: flex;
 justify-content: center;
+padding-right: 1rem;
+padding-bottom: 3rem;
+padding-top: 3rem;
+gap: 20px;
  }
 
 .footer{
@@ -154,7 +158,7 @@ grid-area: numeros;
 }
 
 
-@media (main-width:576px) {
+@media (min-width:576px) {
 
     .contenedor-grid{
         display: grid;
@@ -167,11 +171,11 @@ grid-area: numeros;
     }
 
 .icono_1{
-    display: none;
+    display:flex ;
 }
 
 .barra{
-    display: flex;
+    display: none;
     
 }
 
@@ -180,9 +184,6 @@ grid-area: numeros;
 main{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    padding-left: 1rem;
-    padding-right:1rem;
 
 }
 
@@ -191,7 +192,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin:0px 0px;
+    margin:0px;
     
     }
   
