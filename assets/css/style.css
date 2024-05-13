@@ -23,15 +23,11 @@ grid-area: footer;
 }
 
 
-img{
-width: 90%;
-height: 90% ;
-}
 
 
 button{
 border-radius: 10px;
-background: rgb(115, 207, 115);
+background: black;
 color:white;
 width: 100px;
 }
@@ -61,10 +57,10 @@ display: none;
 
 
 section {
-background:#fff;
 display: flex;
 flex-direction: column;
 align-items: center;
+background:#fff;
 }
 
 .valor{
@@ -74,34 +70,22 @@ align-items: center;
     width: 8rem ;
 }
 
-.frutas{
-    margin-bottom: 8px;
-    border-radius: 7px;
-    height:32px;
-    width: 262px ;
-}
-
-.verduras{
-    margin-bottom: 10px;
-    border-radius: 7px;
-    height:32px;
-    width: 262px ;
-}
-
-
 
 .card{
-display: grid;
-grid-template-columns: 1fr;
+display: flex;
 width: 250px;
 height: 400px;
-display: flex;
 flex-direction: column;
 background-color: white;
-margin:30px;
 justify-content: center;
 align-items: center;
-box-shadow: 0 10 10px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.card img {
+height:10rem;
+width: 10rem;
 }
 
 
@@ -139,7 +123,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap:1rem;
-font-size: 190%;
+font-size: 2rem;
  }
 
 menu{
@@ -149,30 +133,33 @@ grid-area: menu;
 section{
 grid-area: filtro;
 }
+
 main{
 grid-area: main;
 }
+
 footer{
 grid-area: footer;
 }
+
 nav{
-grid-area: paginas;
+grid-area: numeros;
 }
 
 
-@media (min-width:577px) {
+@media (main-width:576px) {
     .contenedor-grid{
         display: grid;
         grid-template-columns: 20% 80%;
         grid-template-areas:
         "menu menu"
         "filtro main"
-        "filtro paginas"
+        "filtro numeros"
         "footer footer";
     }
 
 .icono_1{
-    display: flex;
+    display: none;
 }
 
 .barra{
@@ -180,19 +167,17 @@ grid-area: paginas;
     
 }
 
-.barra ul li{
+.barra ul li p{
     margin:0px;
+    padding: 1px;
 }
 
-main{
+.main{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    margin-top:2rem;
-    justify-items: center;
-    align-items: center;
     padding-left: 2rem;
-    padding-right: 10rem;
+    padding-right: 2rem;
 
 }
 
@@ -201,16 +186,20 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 60px 6px;
-    gap: 20px;
+    margin: 0px 0px;
+    
  }
 
  section{
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     background: #fff
   }
+
+
+
+
 
   .numeros {
     display: flex;
@@ -231,7 +220,7 @@ main{
     .contenedor-grid{
         display: grid;
         height: 100vh;
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 20% 80%;
         grid-template-areas:
         "menu filtro"
         "menu main"
@@ -243,7 +232,7 @@ main{
         align-items: flex-start;
         flex-direction: column;
         justify-content: flex-start;
-        margin-right: 1rem;
+      
 
 }
 
@@ -264,10 +253,8 @@ main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    margin: 100px;
-    margin-left: 0rem;
-    margin-bottom: 30rem;
-    padding-left: 9rem;
+    margin-left: 3rem;
+    padding-left: 3rem;
 }
 
 .card {
@@ -275,7 +262,6 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px 0px;
 }
 
 
@@ -292,6 +278,7 @@ section{
 .numeros {
     display: flex;
     align-content: center;
+    align-self: center;
 
 }
 
