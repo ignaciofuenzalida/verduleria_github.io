@@ -182,6 +182,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 30px;
     
    
     
@@ -259,7 +260,8 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 3rem;
+    width: 0px;
+    padding: 0xp;
     
    
 }
