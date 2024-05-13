@@ -73,12 +73,14 @@ background:#fff;
 
 .card{
 display: flex;
-width: 250px;
-height: 400px;
 flex-direction: column;
-background-color: white;
 justify-content: center;
 align-items: center;
+background-color: white;
+width: 250px;
+height: 400px;
+padding-left: 12rem;
+
 
 
 }
@@ -180,8 +182,8 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px 0px;
     
+   
     
  }
 
@@ -257,6 +259,9 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 3rem;
+    
+   
 }
 
 
