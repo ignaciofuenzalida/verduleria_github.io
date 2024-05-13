@@ -167,17 +167,11 @@ grid-area: numeros;
     
 }
 
-.barra ul li p{
-    margin:0px;
-    padding: 1px;
-}
 
-.main{
+
+main{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
 
 }
 
@@ -187,6 +181,7 @@ grid-area: numeros;
     justify-content: center;
     align-items: center;
     margin: 0px 0px;
+    
     
  }
 
